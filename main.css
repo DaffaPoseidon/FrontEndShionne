@@ -115,7 +115,7 @@ section {
 
 .featured {
   position: relative;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .featured .subtitle {
@@ -125,7 +125,7 @@ section {
   letter-spacing: 2px;
   color: #AF00AF;
   text-align: left;
-  margin-left: 65px;
+  margin-left: 100px;
 }
 
 .featured .featured-title {
@@ -136,7 +136,7 @@ section {
   margin-bottom: -.2em;
   display: block;
   text-align: left;
-  margin-left: 65px;
+  margin-left: 100px;
 }
 
 .featured .featured-desc {
@@ -146,7 +146,7 @@ section {
   line-height: 1.5em;
   font-weight: 500;
   text-align: left;
-  margin-left: 65px;
+  margin-left: 100px;
   text-align: justify;
 }
 
@@ -229,15 +229,26 @@ section {
   .featured .subtitle {
     margin-top: -85px;
   }
+  .featured,
+  .left {
+    margin-right: -30px;
+  }
   .featured .subtitle,
   .left .subtitle,
   .inner-transition2 .subtitle {
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-left: 100px;
   }
   .featured .featured-title,
   .left .featured-title,
   .inner-transition2 .featured-title {
     line-height: 35px;
+    margin-left: 100px;
+  }
+  .featured .featured-desc,
+  .left .featured-desc,
+  .inner-transition2 .featured-desc {
+    margin-left: 100px;
   }
   .featured,
   .portofolio-container {
@@ -288,6 +299,21 @@ section {
 }
 
 @media only screen and (min-width: 1050px) {
+  .featured .subtitle,
+  .left .subtitle,
+  .inner-transition2 .subtitle {
+    margin-left: 60px;
+  }
+  .featured .featured-title,
+  .left .featured-title,
+  .inner-transition2 .featured-title {
+    margin-left: 60px;
+  }
+  .featured .featured-desc,
+  .left .featured-desc,
+  .inner-transition2 .featured-desc {
+    margin-left: 60px;
+  }
   .hero {
     height: 90vh;
   }
@@ -309,17 +335,113 @@ section {
     padding: 4em;
   }
   .social-header {
-    display: block;
-  }
-  .social-header ul {
+    border: 10px solid gray;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 7em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-header ul {
+    border: 10px solid gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+  }
+  .social-header ul img {
+    width: 100px;
+    height: 100%;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #6E00FF;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero .content .meet .scroll {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .hero .content .meet .temui {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    text-align: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portofolio img {
     float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    pad: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    pad: 10em 20em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 2em 6em 10em;
   }
 }
 /*# sourceMappingURL=main.css.map */
