@@ -337,8 +337,10 @@ section {
             }
         }
     }
-    .meet {
-        margin: unset;
+    .hero {
+        .meet {
+            margin: unset;
+        }
     }
     .hero-design {
         display: unset;
@@ -395,6 +397,11 @@ section {
     .hero .content {
         padding: 6em 8em 6em 10em;
     }
+    .hero {
+        .meet {
+            margin: unset;
+        }
+    }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -409,5 +416,10 @@ section {
     }
     .hero .content {
         padding: 6em 2em 6em 10em;
+    }
+    .hero {
+        .meet {
+            margin: unset;
+        }
     }
 }
